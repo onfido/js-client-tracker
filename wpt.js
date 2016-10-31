@@ -1579,7 +1579,7 @@
                 screen: window.screen.width + 'x' + window.screen.height,
                 language: window.navigator.browserLanguage || window.navigator.language || '',
                 app: this.config('app'),
-                referer: document.referrer,
+                referer: this.config('referer') || document.referrer,
                 idle: '' + parseInt(this.idle / 1000, 10),
                 vs: 'i'
             };
